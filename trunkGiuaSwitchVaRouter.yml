@@ -18,13 +18,13 @@
           - switchport mode access
           - switchport access vlan 10
           
-     - name: gan cong vao vlan 20
-       ios_config:
+    - name: gan cong vao vlan 10
+      ios_config:
         parents:
-          - int e0/3
+          - int e0/2
         lines:
           - switchport mode access
-          - switchport access vlan 20
+          - switchport access vlan 10
         
     - name: chuyen cong e0/1 sang mode trunk
       ios_config:
