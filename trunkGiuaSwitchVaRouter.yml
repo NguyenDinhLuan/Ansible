@@ -47,7 +47,7 @@
           - no shutdown
           - ip address 192.168.1.1 255.255.255.0
 
-    - name: dat ip subinterface
+    - name: cau hinh router on a stick
       ios_config:
         parents:
           - int {{item.subint}}
