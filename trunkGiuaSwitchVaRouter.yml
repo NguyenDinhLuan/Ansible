@@ -26,7 +26,7 @@
           - switchport mode access
           - switchport access vlan 20
         
-    - name: chuyen cong e0/1 sang mode trunk
+    - name: trunk e0/1
       ios_config:
         parents:
           - int e0/1
