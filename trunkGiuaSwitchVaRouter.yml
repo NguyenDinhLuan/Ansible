@@ -34,8 +34,8 @@
           - switchport mode access
           - switchport access {{ item.vlan }}
       with_items:
-       - { int: Ethernet0/2 , vlan: 10 }
-       - { int: Ethernet0/3 , vlan: 20 }
+       - { int: "Ethernet0/2" , vlan: "10" }
+       - { int: "Ethernet0/3" , vlan: "20" }
         
     - name: chuyen cong e0/1 sang mode trunk
       ios_config:
