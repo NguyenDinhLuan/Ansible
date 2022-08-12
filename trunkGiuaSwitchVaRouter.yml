@@ -18,7 +18,7 @@
           - switchport mode access
           - switchport access vlan 10
           
-    - name: gan cong vao vlan 10
+    - name: gan cong vao vlan 20
       ios_config:
         parents:
           - int e0/2
